@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import html
-import json
 import re
 import sys
 from pathlib import Path
@@ -29,7 +28,6 @@ EXAMPLES = [
     "How do I download a capital-gains statement?",
 ]
 
-DATA = ROOT / "data"
 URL_RE = re.compile(r"https?://\S+")
 
 CSS = """
@@ -295,50 +293,10 @@ hr { border-color: rgba(255, 255, 255, 0.08) !important; }
 """
 
 
-def _read_json(path: Path):
-    try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except Exception as exc:
-        return {"error": f"Could not read {path.name}: {exc}"}
-
-
-def _read_jsonl(path: Path) -> list[dict]:
-    rows: list[dict] = []
-    try:
-        for line in path.read_text(encoding="utf-8").splitlines():
-            if line.strip():
-                rows.append(json.loads(line))
-    except Exception:
-        return rows
-    return rows
-
-
-def _latest(directory: Path) -> Path | None:
-    if not directory.exists():
-        return None
-    files = [p for p in directory.glob("*.json") if p.is_file()]
-    return max(files, key=lambda p: p.stat().st_mtime) if files else None
-
-
-def _collection_count(config: dict) -> int | None:
-    try:
-        import chromadb
-
-        chroma_cfg = config.get("chroma") or {}
-        persist_dir = ROOT / str(chroma_cfg.get("persist_dir", "data/chroma"))
-        name = str(chroma_cfg.get("collection", "groww_mf_faq"))
-        if not persist_dir.exists():
-            return None
-        client = chromadb.PersistentClient(path=str(persist_dir))
-        return client.get_collection(name).count()
-    except Exception:
-        return None
-
-
 def _answer_card(payload: dict) -> None:
     mode = payload.get("mode")
     if mode == "error":
-        st.error(payload.get("error") or "Generation failed. The retrieval artifact is saved.")
+        st.error(payload.get("error") or "The answer could not be generated. Please try again.")
         return
 
     if mode == "refuse":
@@ -372,7 +330,6 @@ st.set_page_config(
 st.markdown(CSS, unsafe_allow_html=True)
 
 config = get_config()
-count = _collection_count(config)
 scheme_count = len(
     {
         s.get("entity_id")
@@ -380,8 +337,6 @@ scheme_count = len(
         if s.get("entity_type") == "scheme" and s.get("entity_id")
     }
 )
-model = (config.get("llm") or {}).get("model") or "not configured"
-
 st.markdown(
     """
     <div class="gw-hero">
@@ -399,20 +354,12 @@ st.markdown(
 st.markdown(
     f"""
     <div class="gw-stats">
-      <div class="gw-stat"><b>{count or 0}</b><span>Indexed chunks</span></div>
       <div class="gw-stat"><b>{scheme_count}</b><span>HDFC schemes</span></div>
-      <div class="gw-stat"><b>{html.escape(str(model))}</b><span>LLM model</span></div>
     </div>
     <div class="gw-disclaimer">{html.escape(DISCLAIMER)}</div>
     """,
     unsafe_allow_html=True,
 )
-
-if not count:
-    st.warning(
-        "The Chroma collection is empty. Build it first:\n\n"
-        "```\npython -m src.ingest.run --phase all\n```"
-    )
 
 if "question" not in st.session_state:
     st.session_state.question = ""
@@ -441,7 +388,7 @@ if submitted:
     if not question.strip():
         st.warning("Please enter a question.")
     else:
-        with st.spinner("Retrieving official chunks..."):
+        with st.spinner("Searching official sources..."):
             try:
                 st.session_state.last_result = answer_question(question, config)
             except Exception as exc:
@@ -453,137 +400,6 @@ if submitted:
 result = st.session_state.last_result
 if result:
     _answer_card(result)
-    if result.get("query_id"):
-        st.caption(f"Query id: {result['query_id']}")
-
-st.divider()
-st.markdown('<div class="gw-section">Demo artifacts</div>', unsafe_allow_html=True)
-tabs = st.tabs(
-    [
-        "Scrape",
-        "Loaded docs",
-        "Chunks",
-        "Embeddings",
-        "Chroma",
-        "Latest retrieved",
-        "Latest generated",
-    ]
-)
-
-with tabs[0]:
-    report_path = DATA / "raw" / "scrape_report.json"
-    if report_path.exists():
-        report = _read_json(report_path)
-        st.write(
-            f"ok: {report.get('ok_count')} | failed: {report.get('failed_count')} | "
-            f"fetched: {report.get('fetched_at')}"
-        )
-        st.json(report)
-    else:
-        st.write("No scrape report yet.")
-    html_dir = DATA / "raw" / "html"
-    html_files = sorted(p.name for p in html_dir.glob("*.html")) if html_dir.exists() else []
-    st.write(f"Raw HTML files: {len(html_files)}")
-    if html_files:
-        st.code("\n".join(html_files))
-
-with tabs[1]:
-    docs = _read_jsonl(DATA / "raw" / "documents.jsonl")
-    if docs:
-        st.dataframe(
-            [
-                {
-                    "doc_id": d.get("doc_id"),
-                    "title": d.get("title"),
-                    "entity_id": d.get("entity_id"),
-                    "chars": len(d.get("text") or ""),
-                    "url": d.get("url"),
-                }
-                for d in docs
-            ],
-            width="stretch",
-        )
-        with st.expander("View a document"):
-            choice = st.selectbox("Document", [d.get("doc_id") for d in docs])
-            selected = next((d for d in docs if d.get("doc_id") == choice), None)
-            if selected:
-                st.write(selected.get("text"))
-    else:
-        st.write("No loaded documents. Run the load phase.")
-
-with tabs[2]:
-    chunks = _read_jsonl(DATA / "chunks" / "chunks.jsonl")
-    if chunks:
-        st.write(f"Total chunks: {len(chunks)}")
-        st.dataframe(
-            [
-                {
-                    "chunk_id": c.get("chunk_id"),
-                    "doc_id": c.get("doc_id"),
-                    "section": c.get("section"),
-                    "is_fact": c.get("is_fact"),
-                    "chars": len(c.get("text") or ""),
-                    "source_url": c.get("source_url"),
-                }
-                for c in chunks
-            ],
-            width="stretch",
-        )
-        with st.expander("View a chunk"):
-            choice = st.selectbox("Chunk", [c.get("chunk_id") for c in chunks])
-            selected = next((c for c in chunks if c.get("chunk_id") == choice), None)
-            if selected:
-                st.json(selected)
-    else:
-        st.write("No chunks. Run the chunk phase.")
-
-with tabs[3]:
-    meta = _read_jsonl(DATA / "embeddings" / "meta.jsonl")
-    vectors = DATA / "embeddings" / "vectors.npy"
-    if meta:
-        st.write(
-            f"Vectors: {len(meta)} | dim: {meta[0].get('dim')} | "
-            f"model: {(config.get('embedding') or {}).get('model')}"
-        )
-        st.dataframe(
-            [
-                {
-                    "chunk_id": m.get("chunk_id"),
-                    "section": m.get("section"),
-                    "dim": m.get("dim"),
-                    "source_url": m.get("source_url"),
-                }
-                for m in meta
-            ],
-            width="stretch",
-        )
-    else:
-        st.write("No embeddings metadata. Run the embed phase.")
-    if vectors.exists():
-        st.caption(f"Vector matrix: {vectors.name} ({vectors.stat().st_size} bytes)")
-
-with tabs[4]:
-    info_path = DATA / "chroma" / "collection_info.json"
-    if info_path.exists():
-        st.json(_read_json(info_path))
-    else:
-        st.write("No collection info. Run the store phase.")
-
-with tabs[5]:
-    latest = _latest(DATA / "retrieved")
-    if latest:
-        st.caption(latest.name)
-        st.json(_read_json(latest))
-    else:
-        st.write("No retrieval artifacts yet.")
-
-with tabs[6]:
-    latest = _latest(DATA / "generated")
-    if latest:
-        st.caption(latest.name)
-        st.json(_read_json(latest))
-    else:
-        st.write("No generated artifacts yet.")
 
 st.markdown(
     '<div class="gw-footer">Groww MF FAQ prototype · small-corpus RAG · '

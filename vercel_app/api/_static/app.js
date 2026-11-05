@@ -16,14 +16,10 @@ const statusEl = $("status");
 const statusText = $("status-text");
 const resultEl = $("result");
 const answerBadge = $("answer-badge");
-const answerMeta = $("answer-meta");
 const answerBody = $("answer-body");
 const citationLink = $("citation-link");
 const citationText = $("citation-text");
 const updatedEl = $("updated");
-const evidencePanel = $("evidence-panel");
-const evidenceCount = $("evidence-count");
-const evidenceList = $("evidence-list");
 const errorPanel = $("error-panel");
 const errorText = $("error-text");
 
@@ -37,7 +33,7 @@ async function loadModel() {
   if (state.loading) return state.loading;
 
   state.loading = (async () => {
-    setStatus("working", "Downloading embedding model (first visit)…");
+    setStatus("working", "Preparing assistant (first visit)…");
     const { pipeline, env } = await import(TRANSFORMERS_CDN);
     env.allowLocalModels = false;
     env.useBrowserCache = true;
@@ -49,7 +45,7 @@ async function loadModel() {
     return extractor;
   })().catch((error) => {
     state.loading = null;
-    setStatus("error", "Embedding model failed to load");
+    setStatus("error", "Assistant failed to load");
     throw error;
   });
 
@@ -79,53 +75,6 @@ function shortUrl(url) {
   }
 }
 
-function renderEvidence(hits) {
-  evidenceList.innerHTML = "";
-  if (!Array.isArray(hits) || hits.length === 0) {
-    evidencePanel.hidden = true;
-    return;
-  }
-
-  evidencePanel.hidden = false;
-  evidenceCount.textContent = `${hits.length} chunks`;
-
-  for (const hit of hits.slice(0, 5)) {
-    const item = document.createElement("div");
-    item.className = "evidence-item";
-
-    const head = document.createElement("div");
-    head.className = "evidence-head";
-
-    const section = document.createElement("span");
-    section.className = "section";
-    section.textContent = hit.section || "general";
-
-    const distance = document.createElement("span");
-    const value = Number(hit.distance);
-    distance.textContent = Number.isFinite(value)
-      ? `distance ${value.toFixed(3)}`
-      : "distance —";
-
-    const fetched = document.createElement("span");
-    fetched.textContent = hit.fetched_at || "";
-
-    head.append(section, distance, fetched);
-
-    const text = document.createElement("div");
-    text.className = "evidence-text";
-    text.textContent = hit.text || "";
-
-    const link = document.createElement("a");
-    link.href = hit.source_url || "#";
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.textContent = hit.source_url || "";
-
-    item.append(head, text, link);
-    evidenceList.append(item);
-  }
-}
-
 function showError(message) {
   errorPanel.hidden = false;
   errorText.textContent = message;
@@ -150,13 +99,6 @@ function render(data) {
   answerBadge.textContent =
     data.mode === "refuse" ? "guardrail refusal" : "grounded answer";
 
-  const chunkCount = Array.isArray(data.chunks_used)
-    ? data.chunks_used.length
-    : 0;
-  answerMeta.textContent = data.model
-    ? `${data.model} · ${chunkCount} chunks`
-    : `${chunkCount} chunks`;
-
   answerBody.textContent =
     cleanAnswerBody(data.answer_text) || "No answer text was returned.";
 
@@ -174,7 +116,6 @@ function render(data) {
     updatedEl.textContent = "";
   }
 
-  renderEvidence(data.hits);
   setStatus(
     "ready",
     data.mode === "answer" ? "Answer grounded" : "Refused by guardrail"
@@ -199,14 +140,14 @@ async function handleAsk(event) {
   try {
     const extractor = await loadModel();
 
-    setStatus("working", "Computing query embedding…");
+    setStatus("working", "Understanding your question…");
     const output = await extractor(question, {
       pooling: "mean",
       normalize: true,
     });
     const embedding = Array.from(output.data);
 
-    setStatus("working", "Retrieving official chunks…");
+    setStatus("working", "Searching official sources…");
     const response = await fetch("/api/ask", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -245,23 +186,8 @@ function wireExamples() {
   });
 }
 
-async function hydrateStats() {
-  try {
-    const response = await fetch("/api/ask");
-    if (!response.ok) return;
-    const data = await response.json();
-    if (data.chunks) {
-      const stat = $("stat-chunks");
-      if (stat) stat.textContent = String(data.chunks);
-    }
-  } catch {
-    /* keep static stats */
-  }
-}
-
 form.addEventListener("submit", handleAsk);
 wireExamples();
-hydrateStats();
 loadModel().catch(() => {
   /* status already reflects the failure */
 });

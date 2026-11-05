@@ -510,18 +510,6 @@ def answer(question: str, query_embedding: list[float]) -> dict[str, Any]:
     )
     text, error, model = _groq(SYSTEM_PROMPT, user_prompt)
 
-    public_hits = [
-        {
-            "chunk_id": hit.get("chunk_id"),
-            "section": hit.get("section"),
-            "distance": hit.get("distance"),
-            "source_url": hit.get("source_url"),
-            "text": hit.get("text"),
-            "fetched_at": hit.get("fetched_at"),
-        }
-        for hit in hits
-    ]
-
     if error:
         return {
             "query_id": query_id,
@@ -532,10 +520,7 @@ def answer(question: str, query_embedding: list[float]) -> dict[str, Any]:
             "answer_text": "",
             "citation_url": citation_url,
             "last_updated": last_updated,
-            "chunks_used": [hit.get("chunk_id") for hit in used],
-            "model": model,
-            "error": error,
-            "hits": public_hits,
+            "error": "The assistant is temporarily unavailable. Please try again.",
         }
 
     return {
@@ -547,10 +532,7 @@ def answer(question: str, query_embedding: list[float]) -> dict[str, Any]:
         "answer_text": _finalize_answer(text or "", citation_url, last_updated),
         "citation_url": citation_url,
         "last_updated": last_updated,
-        "chunks_used": [hit.get("chunk_id") for hit in used],
-        "model": model,
         "error": None,
-        "hits": public_hits,
     }
 
 
@@ -590,14 +572,11 @@ class handler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:
         path = (self.path or "/").split("?", 1)[0]
         if path in ("/api/ask", "/api/ask/"):
-            chunks, vectors = _load_corpus()
             self._send(
                 200,
                 {
                     "ok": True,
                     "service": "groww-mf-faq",
-                    "chunks": len(chunks),
-                    "dim": int(vectors.shape[1]) if len(vectors.shape) > 1 else 0,
                 },
             )
             return

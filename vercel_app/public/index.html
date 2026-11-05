@@ -35,13 +35,6 @@
         Four HDFC schemes, indexed from official Groww pages. Every answer cites the
         exact page and the date it was fetched. No advice. No guesses. No returns.
       </p>
-
-      <div class="stats" aria-label="Index stats">
-        <div class="stat"><b id="stat-chunks">333</b><span>chunks</span></div>
-        <div class="stat"><b>4</b><span>schemes</span></div>
-        <div class="stat"><b>384</b><span>dims</span></div>
-        <div class="stat"><b>Groq</b><span>generation</span></div>
-      </div>
     </section>
 
     <section class="panel ask-panel">
@@ -49,7 +42,7 @@
         <h2>Ask a scheme fact</h2>
         <span class="status" id="status" data-state="loading">
           <span class="status-dot"></span>
-          <span id="status-text">Loading embedding model…</span>
+          <span id="status-text">Preparing assistant…</span>
         </span>
       </div>
 
@@ -85,7 +78,6 @@
       <div class="panel answer-panel">
         <div class="answer-top">
           <span class="badge" id="answer-badge">answer</span>
-          <span class="answer-meta" id="answer-meta"></span>
         </div>
         <div class="answer-body" id="answer-body"></div>
         <div class="answer-foot">
@@ -100,14 +92,6 @@
           <span class="updated" id="updated"></span>
         </div>
       </div>
-
-      <details class="panel evidence-panel" id="evidence-panel">
-        <summary>
-          <span>Retrieved evidence</span>
-          <span class="evidence-count" id="evidence-count"></span>
-        </summary>
-        <div class="evidence-list" id="evidence-list"></div>
-      </details>
     </section>
 
     <section class="panel error-panel" id="error-panel" hidden>
@@ -119,7 +103,7 @@
   <footer class="footer">
     <p>
       Facts-only demo. Not investment advice. Verify on the linked official page before acting.
-      Sources: Groww scheme pages. Generated with Groq.
+      Sources: Groww scheme pages.
     </p>
   </footer>
 
