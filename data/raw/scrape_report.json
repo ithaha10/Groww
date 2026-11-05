@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-04T13:42:00Z",
+  "fetched_at": "2026-11-05T08:21:05Z",
   "ok_count": 10,
   "failed_count": 7,
   "ok": [
@@ -8,7 +8,7 @@
       "url": "https://groww.in/mutual-funds/amc/hdfc-mutual-funds",
       "html_path": "data/raw/html/hdfc-amc.html",
       "http_status": 200,
-      "fetched_at": "2026-11-04T13:41:42Z",
+      "fetched_at": "2026-11-05T08:20:49Z",
       "error": null
     },
     {
@@ -16,7 +16,7 @@
       "url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
       "html_path": "data/raw/html/hdfc-large-cap.html",
       "http_status": 200,
-      "fetched_at": "2026-11-04T13:41:43Z",
+      "fetched_at": "2026-11-05T08:20:50Z",
       "error": null
     },
     {
@@ -24,7 +24,7 @@
       "url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
       "html_path": "data/raw/html/hdfc-flexi-cap.html",
       "http_status": 200,
-      "fetched_at": "2026-11-04T13:41:44Z",
+      "fetched_at": "2026-11-05T08:20:51Z",
       "error": null
     },
     {
@@ -32,7 +32,7 @@
       "url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
       "html_path": "data/raw/html/hdfc-elss.html",
       "http_status": 200,
-      "fetched_at": "2026-11-04T13:41:45Z",
+      "fetched_at": "2026-11-05T08:20:52Z",
       "error": null
     },
     {
@@ -40,7 +40,7 @@
       "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
       "html_path": "data/raw/html/hdfc-mid-cap.html",
       "http_status": 200,
-      "fetched_at": "2026-11-04T13:41:46Z",
+      "fetched_at": "2026-11-05T08:20:53Z",
       "error": null
     },
     {
@@ -48,7 +48,7 @@
       "url": "https://groww.in/help/mutual-funds/mf-others/how-to-download-capital-gain-report--50",
       "html_path": "data/raw/html/groww-capital-gain-report.html",
       "http_status": 200,
-      "fetched_at": "2026-11-04T13:41:47Z",
+      "fetched_at": "2026-11-05T08:20:54Z",
       "error": null
     },
     {
@@ -56,7 +56,7 @@
       "url": "https://groww.in/help/my-account/ma-others/where-can-i-get-the-tax-proof-for-section-80c",
       "html_path": "data/raw/html/groww-elss-tax-proof.html",
       "http_status": 200,
-      "fetched_at": "2026-11-04T13:41:48Z",
+      "fetched_at": "2026-11-05T08:20:55Z",
       "error": null
     },
     {
@@ -64,7 +64,7 @@
       "url": "https://www.amfiindia.com/investor",
       "html_path": "data/raw/html/amfi-investor.html",
       "http_status": 200,
-      "fetched_at": "2026-11-04T13:41:55Z",
+      "fetched_at": "2026-11-05T08:21:02Z",
       "error": null
     },
     {
@@ -72,7 +72,7 @@
       "url": "https://investor.sebi.gov.in/",
       "html_path": "data/raw/html/sebi-investor.html",
       "http_status": 200,
-      "fetched_at": "2026-11-04T13:41:56Z",
+      "fetched_at": "2026-11-05T08:21:04Z",
       "error": null
     },
     {
@@ -80,7 +80,7 @@
       "url": "https://investor.sebi.gov.in/iematerial.html",
       "html_path": "data/raw/html/sebi-investor-material.html",
       "http_status": 200,
-      "fetched_at": "2026-11-04T13:41:57Z",
+      "fetched_at": "2026-11-05T08:21:05Z",
       "error": null
     }
   ],
@@ -90,7 +90,7 @@
       "url": "https://groww.in/p/elss",
       "html_path": null,
       "http_status": 404,
-      "fetched_at": "2026-11-04T13:41:49Z",
+      "fetched_at": "2026-11-05T08:20:56Z",
       "error": "http_404"
     },
     {
@@ -98,7 +98,7 @@
       "url": "https://groww.in/p/sip",
       "html_path": null,
       "http_status": 404,
-      "fetched_at": "2026-11-04T13:41:50Z",
+      "fetched_at": "2026-11-05T08:20:57Z",
       "error": "http_404"
     },
     {
@@ -106,7 +106,7 @@
       "url": "https://www.hdfcfund.com/mutual-funds/factsheets",
       "html_path": null,
       "http_status": 403,
-      "fetched_at": "2026-11-04T13:41:51Z",
+      "fetched_at": "2026-11-05T08:20:57Z",
       "error": "http_403"
     },
     {
@@ -114,7 +114,7 @@
       "url": "https://www.hdfcfund.com/explore/mutual-funds/hdfc-large-cap-fund/direct",
       "html_path": null,
       "http_status": 403,
-      "fetched_at": "2026-11-04T13:41:51Z",
+      "fetched_at": "2026-11-05T08:20:58Z",
       "error": "http_403"
     },
     {
@@ -122,7 +122,7 @@
       "url": "https://www.hdfcfund.com/explore/mutual-funds/hdfc-flexi-cap-fund/direct",
       "html_path": null,
       "http_status": 403,
-      "fetched_at": "2026-11-04T13:41:52Z",
+      "fetched_at": "2026-11-05T08:20:59Z",
       "error": "http_403"
     },
     {
@@ -130,7 +130,7 @@
       "url": "https://www.hdfcfund.com/explore/mutual-funds/hdfc-elss-tax-saver-fund/direct",
       "html_path": null,
       "http_status": 403,
-      "fetched_at": "2026-11-04T13:41:53Z",
+      "fetched_at": "2026-11-05T08:21:00Z",
       "error": "http_403"
     },
     {
@@ -138,7 +138,7 @@
       "url": "https://www.hdfcfund.com/explore/mutual-funds/hdfc-mid-cap-fund/direct",
       "html_path": null,
       "http_status": 403,
-      "fetched_at": "2026-11-04T13:41:54Z",
+      "fetched_at": "2026-11-05T08:21:01Z",
       "error": "http_403"
     }
   ]
