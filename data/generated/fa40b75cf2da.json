@@ -1,0 +1,14 @@
+{
+  "query_id": "fa40b75cf2da",
+  "query": "Should I buy HDFC Flexi Cap?",
+  "mode": "refuse",
+  "intent": "investment_advice",
+  "answer_text": "I can only share publicly available scheme facts, not investment advice. For investor education, see https://investor.sebi.gov.in/.",
+  "citation_url": "https://investor.sebi.gov.in/",
+  "last_updated": "2026-11-04T13:46:00Z",
+  "field": null,
+  "chunks_used": [],
+  "model": null,
+  "error": null,
+  "generated_at": "2026-11-04T13:46:00Z"
+}

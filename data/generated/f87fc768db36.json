@@ -1,0 +1,17 @@
+{
+  "query_id": "f87fc768db36",
+  "query": "expense ratio of HDFC Large Cap Fund Direct Growth",
+  "mode": "error",
+  "intent": "fact",
+  "field": "expense_ratio",
+  "answer_text": "",
+  "citation_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+  "last_updated": "2026-11-04T13:24:07Z",
+  "chunks_used": [
+    "hdfc-large-cap::expense-ratio::0002",
+    "hdfc-large-cap::expense-ratio::0001"
+  ],
+  "model": "",
+  "error": "missing GROQ_API_KEY in .env",
+  "generated_at": "2026-11-04T13:28:25Z"
+}

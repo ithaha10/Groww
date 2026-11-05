@@ -1,0 +1,16 @@
+{
+  "query_id": "377f7bec74a0",
+  "query": "Minimum SIP of HDFC Flexi Cap Direct Plan Growth",
+  "mode": "error",
+  "intent": "fact",
+  "field": "min_sip",
+  "answer_text": "",
+  "citation_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+  "last_updated": "2026-11-04T13:41:44Z",
+  "chunks_used": [
+    "hdfc-flexi-cap::min-sip::0011"
+  ],
+  "model": "llama-3.3-70b-versatile",
+  "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+  "generated_at": "2026-11-04T13:51:33Z"
+}

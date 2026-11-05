@@ -1,0 +1,71 @@
+{
+  "query_id": "a9fd222217bc",
+  "query": "Lock-in for HDFC ELSS Tax Saver Fund Direct Plan Growth",
+  "top_k": 5,
+  "entity_filter": "hdfc-elss-tax-saver-direct-growth",
+  "field_filter": "lock_in",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "retrieved_at": "2026-11-04T13:31:36Z",
+  "hits": [
+    {
+      "chunk_id": "hdfc-elss::lock-in::0001",
+      "distance": 0.6735391020774841,
+      "score": 0.3265,
+      "doc_id": "hdfc-elss",
+      "entity_id": "hdfc-elss-tax-saver-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "section": "lock_in",
+      "text": "ELSS • 3Y Lock-in",
+      "fetched_at": "2026-11-04T13:24:08Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-elss::riskometer::0009",
+      "distance": 0.24564528465270996,
+      "score": 0.7544,
+      "doc_id": "hdfc-elss",
+      "entity_id": "hdfc-elss-tax-saver-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "section": "riskometer",
+      "text": "The HDFC ELSS Tax Saver Fund Direct Plan Growth is rated Very High risk.",
+      "fetched_at": "2026-11-04T13:24:08Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-elss::hdfc-elss-tax-saver-fund-direct-plan-growth::0109",
+      "distance": 0.25007152557373047,
+      "score": 0.7499,
+      "doc_id": "hdfc-elss",
+      "entity_id": "hdfc-elss-tax-saver-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "section": "HDFC ELSS Tax Saver Fund Direct Plan Growth",
+      "text": "HDFC ELSS Tax Saver Fund Direct Plan Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 10 Dec 1999. Amar Kalkundrikar is the Current Fund Manager of HDFC ELSS Tax Saver Fund Direct Plan Growth fund. The fund currently has an Asset Under Management(AUM) of ₹9,34,076 Cr and the Latest NAV as of 03 Nov 2026 is ₹1,470.70. Minimum Lumpsum Investment is ₹500. ;",
+      "fetched_at": "2026-11-04T13:24:08Z",
+      "is_fact": false
+    },
+    {
+      "chunk_id": "hdfc-elss::amar-kalkundrikar::0105",
+      "distance": 0.49329668283462524,
+      "score": 0.5067,
+      "doc_id": "hdfc-elss",
+      "entity_id": "hdfc-elss-tax-saver-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "section": "Amar Kalkundrikar",
+      "text": "Dec 2025 - Present View details Education Mr. Kalkundrikar has done B.Com, CA, CFA, and MBA from Columbia Business School. Experience Prior to joining HDFC Asset Management Company Limited, he has worked with Nippon India Mutual Fund, and HDFC AMC. He worked with multiple roles at HDFC MF. Also manages these schemes",
+      "fetched_at": "2026-11-04T13:24:08Z",
+      "is_fact": false
+    },
+    {
+      "chunk_id": "hdfc-elss::date-of-incorporation::0114",
+      "distance": 0.5649581551551819,
+      "score": 0.435,
+      "doc_id": "hdfc-elss",
+      "entity_id": "hdfc-elss-tax-saver-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "section": "Date of Incorporation",
+      "text": "10 Dec 1999 Phone 022 – 66316333 E-mail [email protected] Website http://www.hdfcfund.com",
+      "fetched_at": "2026-11-04T13:24:08Z",
+      "is_fact": false
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "query_id": "8e7593f1420a",
+  "query": "What is the riskometer of HDFC Mid Cap Fund Direct Growth?",
+  "top_k": 5,
+  "entity_filter": "hdfc-mid-cap-direct-growth",
+  "field_filter": "riskometer",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "retrieved_at": "2026-11-04T13:43:00Z",
+  "hits": [
+    {
+      "chunk_id": "hdfc-mid-cap::riskometer::0010",
+      "distance": 0.12506866455078125,
+      "score": 0.8749,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "riskometer",
+      "text": "The HDFC Mid Cap Fund Direct Growth is rated Very High risk.",
+      "fetched_at": "2026-11-04T13:41:46Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-mid-cap::riskometer::0001",
+      "distance": 0.5172221660614014,
+      "score": 0.4828,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "riskometer",
+      "text": "Very High Risk +15.51 %",
+      "fetched_at": "2026-11-04T13:41:46Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-mid-cap::hdfc-mid-cap-fund-direct-growth::0133",
+      "distance": 0.22155892848968506,
+      "score": 0.7784,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "HDFC Mid Cap Fund Direct Growth",
+      "text": "HDFC Mid Cap Fund Direct Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 10 Dec 1999. Chirag Setalvad is the Current Fund Manager of HDFC Mid Cap Fund Direct Growth fund. The fund currently has an Asset Under Management(AUM) of ₹9,34,076 Cr and the Latest NAV as of 03 Nov 2026 is ₹220.09. Minimum Lumpsum Investment is ₹100. ;",
+      "fetched_at": "2026-11-04T13:41:46Z",
+      "is_fact": false
+    },
+    {
+      "chunk_id": "hdfc-mid-cap::investment-objective::0134",
+      "distance": 0.4898512363433838,
+      "score": 0.5101,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "Investment Objective",
+      "text": "The scheme seeks to provide long-term capital appreciation/income by investing predominantly in Mid-Cap companies.",
+      "fetched_at": "2026-11-04T13:41:46Z",
+      "is_fact": false
+    },
+    {
+      "chunk_id": "hdfc-mid-cap::mutual-funds-by-groww::0028",
+      "distance": 0.4926716685295105,
+      "score": 0.5073,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "Mutual Funds by Groww",
+      "text": "Mutual funds by Groww designed for your investment goals",
+      "fetched_at": "2026-11-04T13:41:46Z",
+      "is_fact": false
+    }
+  ]
+}

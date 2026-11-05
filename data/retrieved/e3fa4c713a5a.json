@@ -1,0 +1,71 @@
+{
+  "query_id": "e3fa4c713a5a",
+  "query": "Expense ratio of HDFC Mid Cap Fund Direct Growth",
+  "top_k": 5,
+  "entity_filter": "hdfc-mid-cap-direct-growth",
+  "field_filter": "expense_ratio",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "retrieved_at": "2026-11-04T13:43:34Z",
+  "hits": [
+    {
+      "chunk_id": "hdfc-mid-cap::expense-ratio::0003",
+      "distance": 0.455047607421875,
+      "score": 0.545,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "expense_ratio",
+      "text": "Expense ratio A fee payable to a mutual fund house for managing your mutual fund investments. It is the total percentage of a company's fund assets used for administrative, management, advertising, and other expenses. Tax",
+      "fetched_at": "2026-11-04T13:41:46Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-mid-cap::expense-ratio::0002",
+      "distance": 0.5886253118515015,
+      "score": 0.4114,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "expense_ratio",
+      "text": "Expense ratio 0.74% Rating",
+      "fetched_at": "2026-11-04T13:41:46Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-mid-cap::riskometer::0010",
+      "distance": 0.23332452774047852,
+      "score": 0.7667,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "riskometer",
+      "text": "The HDFC Mid Cap Fund Direct Growth is rated Very High risk.",
+      "fetched_at": "2026-11-04T13:41:46Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-mid-cap::hdfc-mid-cap-fund-direct-growth::0133",
+      "distance": 0.24112319946289062,
+      "score": 0.7589,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "HDFC Mid Cap Fund Direct Growth",
+      "text": "HDFC Mid Cap Fund Direct Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 10 Dec 1999. Chirag Setalvad is the Current Fund Manager of HDFC Mid Cap Fund Direct Growth fund. The fund currently has an Asset Under Management(AUM) of ₹9,34,076 Cr and the Latest NAV as of 03 Nov 2026 is ₹220.09. Minimum Lumpsum Investment is ₹100. ;",
+      "fetched_at": "2026-11-04T13:41:46Z",
+      "is_fact": false
+    },
+    {
+      "chunk_id": "hdfc-mid-cap::nippon-india-growth-mid-cap-fund-direct-growth::0128",
+      "distance": 0.48165345191955566,
+      "score": 0.5183,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "Nippon India Growth Mid Cap Fund Direct Growth",
+      "text": "+0.02% +16.49% 50,176.01 Compare Fund management",
+      "fetched_at": "2026-11-04T13:41:46Z",
+      "is_fact": false
+    }
+  ]
+}

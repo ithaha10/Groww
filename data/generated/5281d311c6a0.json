@@ -1,0 +1,16 @@
+{
+  "query_id": "5281d311c6a0",
+  "query": "Benchmark of HDFC Large Cap Fund Direct Growth",
+  "mode": "error",
+  "intent": "fact",
+  "field": "benchmark",
+  "answer_text": "",
+  "citation_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+  "last_updated": "2026-11-04T13:41:43Z",
+  "chunks_used": [
+    "hdfc-large-cap::benchmark::0015"
+  ],
+  "model": "llama-3.3-70b-versatile",
+  "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+  "generated_at": "2026-11-04T13:51:33Z"
+}

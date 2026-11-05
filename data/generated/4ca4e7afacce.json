@@ -1,0 +1,18 @@
+{
+  "query_id": "4ca4e7afacce",
+  "query": "How do I download a capital-gains statement?",
+  "mode": "answer",
+  "intent": "fact",
+  "field": "statement",
+  "answer_text": "To download a capital-gains statement, go to your profile, select 'Reports', and under 'Tax' choose 'Mutual Fund - Capital Gains'. Select the desired financial year and click 'Download'.\n\nSource: https://groww.in/help/mutual-funds/mf-others/how-to-download-capital-gain-report--50\nLast updated from sources: 2026-11-04T13:41:48Z",
+  "citation_url": "https://groww.in/help/mutual-funds/mf-others/how-to-download-capital-gain-report--50",
+  "last_updated": "2026-11-04T13:41:48Z",
+  "chunks_used": [
+    "groww-elss-tax-proof::steps-to-request-your-elss-statement::0003",
+    "hdfc-large-cap::equity-large-cap::0091",
+    "hdfc-mid-cap::equity-mid-cap::0122"
+  ],
+  "model": "qwen/qwen3.8-27b",
+  "error": null,
+  "generated_at": "2026-11-04T13:52:55Z"
+}

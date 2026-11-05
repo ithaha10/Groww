@@ -1,0 +1,17 @@
+{
+  "query_id": "7fdc128404c7",
+  "query": "Riskometer of HDFC Mid Cap Fund Direct Growth",
+  "mode": "error",
+  "intent": "fact",
+  "field": "riskometer",
+  "answer_text": "",
+  "citation_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+  "last_updated": "2026-11-04T13:41:46Z",
+  "chunks_used": [
+    "hdfc-mid-cap::riskometer::0010",
+    "hdfc-mid-cap::riskometer::0001"
+  ],
+  "model": "llama-3.3-70b-versatile",
+  "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+  "generated_at": "2026-11-04T13:51:33Z"
+}

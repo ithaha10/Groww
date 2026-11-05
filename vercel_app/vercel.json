@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/ask.py": {
+      "includeFiles": "api/**",
+      "maxDuration": 30
+    }
+  }
+}

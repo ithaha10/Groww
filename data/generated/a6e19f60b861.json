@@ -1,0 +1,18 @@
+{
+  "query_id": "a6e19f60b861",
+  "query": "How do I download a capital-gains statement?",
+  "mode": "error",
+  "intent": "fact",
+  "field": "statement",
+  "answer_text": "",
+  "citation_url": "https://groww.in/help/my-account/ma-others/where-can-i-get-the-tax-proof-for-section-80c",
+  "last_updated": "2026-11-04T13:24:14Z",
+  "chunks_used": [
+    "groww-elss-tax-proof::steps-to-request-your-elss-statement::0003",
+    "groww-elss-tax-proof::where-can-i-get-the-tax-proof-for-section-80c::0002",
+    "hdfc-large-cap::equity-large-cap::0088"
+  ],
+  "model": "",
+  "error": "missing GROQ_API_KEY in .env",
+  "generated_at": "2026-11-04T13:28:25Z"
+}

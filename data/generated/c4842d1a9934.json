@@ -1,0 +1,18 @@
+{
+  "query_id": "c4842d1a9934",
+  "query": "How do I download a capital-gains statement?",
+  "mode": "error",
+  "intent": "fact",
+  "field": "statement",
+  "answer_text": "",
+  "citation_url": "https://groww.in/help/mutual-funds/mf-others/how-to-download-capital-gain-report--50",
+  "last_updated": "2026-11-04T13:24:14Z",
+  "chunks_used": [
+    "groww-elss-tax-proof::steps-to-request-your-elss-statement::0003",
+    "hdfc-large-cap::equity-large-cap::0088",
+    "hdfc-mid-cap::equity-mid-cap::0119"
+  ],
+  "model": "",
+  "error": "missing GROQ_API_KEY in .env",
+  "generated_at": "2026-11-04T13:29:06Z"
+}

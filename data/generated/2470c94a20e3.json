@@ -1,0 +1,14 @@
+{
+  "query_id": "2470c94a20e3",
+  "query": "What is the 3-year return of HDFC Large Cap?",
+  "mode": "refuse",
+  "intent": "performance_claims",
+  "answer_text": "I can't compute or compare returns or performance. Please use the official factsheet: https://www.hdfcfund.com/mutual-funds/factsheets.",
+  "citation_url": "https://www.hdfcfund.com/mutual-funds/factsheets",
+  "last_updated": "2026-11-04T13:46:00Z",
+  "field": null,
+  "chunks_used": [],
+  "model": null,
+  "error": null,
+  "generated_at": "2026-11-04T13:46:00Z"
+}

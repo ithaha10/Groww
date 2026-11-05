@@ -1,0 +1,18 @@
+url,title,entity_id,reason
+https://groww.in/mutual-funds/amc/hdfc-mutual-funds,HDFC Mutual Fund AMC,hdfc-mutual-fund,seed
+https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth,HDFC Large Cap Fund Direct Growth,hdfc-large-cap-direct-growth,seed
+https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth,HDFC Flexi Cap Direct Plan Growth,hdfc-flexi-cap-direct-growth,seed
+https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth,HDFC ELSS Tax Saver Fund Direct Plan Growth,hdfc-elss-tax-saver-direct-growth,seed
+https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth,HDFC Mid Cap Fund Direct Growth,hdfc-mid-cap-direct-growth,seed
+https://groww.in/help/mutual-funds/mf-others/how-to-download-capital-gain-report--50,How to download capital gain report,groww-capital-gain-report,statement-help
+https://groww.in/help/my-account/ma-others/where-can-i-get-the-tax-proof-for-section-80c,ELSS / 80C tax proof,groww-elss-tax-proof,statement-help
+https://groww.in/p/elss,What is ELSS,groww-elss,education
+https://groww.in/p/sip,What is SIP,groww-sip,education
+https://www.hdfcfund.com/mutual-funds/factsheets,HDFC Mutual Fund factsheets,hdfc-mutual-fund,amc-factsheet
+https://www.hdfcfund.com/explore/mutual-funds/hdfc-large-cap-fund/direct,HDFC Large Cap Fund Direct (AMC),hdfc-large-cap-direct-growth,amc-scheme
+https://www.hdfcfund.com/explore/mutual-funds/hdfc-flexi-cap-fund/direct,HDFC Flexi Cap Fund Direct (AMC),hdfc-flexi-cap-direct-growth,amc-scheme
+https://www.hdfcfund.com/explore/mutual-funds/hdfc-elss-tax-saver-fund/direct,HDFC ELSS Tax Saver Direct (AMC),hdfc-elss-tax-saver-direct-growth,amc-scheme
+https://www.hdfcfund.com/explore/mutual-funds/hdfc-mid-cap-fund/direct,HDFC Mid Cap Fund Direct (AMC),hdfc-mid-cap-direct-growth,amc-scheme
+https://www.amfiindia.com/investor,AMFI Investor Corner,amfi-investor,education
+https://investor.sebi.gov.in/,SEBI Investor,sebi-investor,education
+https://investor.sebi.gov.in/iematerial.html,SEBI investor education material,sebi-investor-material,education

@@ -1,0 +1,16 @@
+{
+  "query_id": "a5b0857776ed",
+  "query": "lock-in for HDFC ELSS Tax Saver Fund Direct Plan Growth",
+  "mode": "error",
+  "intent": "fact",
+  "field": "lock_in",
+  "answer_text": "",
+  "citation_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+  "last_updated": "2026-11-04T13:24:08Z",
+  "chunks_used": [
+    "hdfc-elss::lock-in::0001"
+  ],
+  "model": "",
+  "error": "missing GROQ_API_KEY in .env",
+  "generated_at": "2026-11-04T13:28:25Z"
+}

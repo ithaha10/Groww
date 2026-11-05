@@ -1,0 +1,18 @@
+{
+  "query_id": "4943a84e5ccc",
+  "query": "How do I download a capital-gains statement?",
+  "mode": "error",
+  "intent": "fact",
+  "field": "statement",
+  "answer_text": "",
+  "citation_url": "https://groww.in/help/mutual-funds/mf-others/how-to-download-capital-gain-report--50",
+  "last_updated": "2026-11-04T13:41:48Z",
+  "chunks_used": [
+    "groww-elss-tax-proof::steps-to-request-your-elss-statement::0003",
+    "hdfc-large-cap::equity-large-cap::0091",
+    "hdfc-mid-cap::equity-mid-cap::0122"
+  ],
+  "model": "llama-3.3-70b-versatile",
+  "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+  "generated_at": "2026-11-04T13:51:33Z"
+}

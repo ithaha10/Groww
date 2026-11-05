@@ -1,0 +1,71 @@
+{
+  "query_id": "377f7bec74a0",
+  "query": "Minimum SIP of HDFC Flexi Cap Direct Plan Growth",
+  "top_k": 5,
+  "entity_filter": "hdfc-flexi-cap-direct-growth",
+  "field_filter": "min_sip",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "retrieved_at": "2026-11-04T13:51:33Z",
+  "hits": [
+    {
+      "chunk_id": "hdfc-flexi-cap::min-sip::0011",
+      "distance": 0.47328388690948486,
+      "score": 0.5267,
+      "doc_id": "hdfc-flexi-cap",
+      "entity_id": "hdfc-flexi-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "section": "min_sip",
+      "text": "Minimum SIP Investment is set to ₹100.",
+      "fetched_at": "2026-11-04T13:41:44Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-flexi-cap::riskometer::0010",
+      "distance": 0.2319427728652954,
+      "score": 0.7681,
+      "doc_id": "hdfc-flexi-cap",
+      "entity_id": "hdfc-flexi-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "section": "riskometer",
+      "text": "The HDFC Flexi Cap Direct Plan Growth is rated Very High risk.",
+      "fetched_at": "2026-11-04T13:41:44Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-flexi-cap::hdfc-flexi-cap-direct-plan-growth::0138",
+      "distance": 0.28904956579208374,
+      "score": 0.711,
+      "doc_id": "hdfc-flexi-cap",
+      "entity_id": "hdfc-flexi-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "section": "HDFC Flexi Cap Direct Plan Growth",
+      "text": "HDFC Flexi Cap Direct Plan Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 10 Dec 1999. Dhruv Muchhal is the Current Fund Manager of HDFC Flexi Cap Direct Plan Growth fund. The fund currently has an Asset Under Management(AUM) of ₹9,34,076 Cr and the Latest NAV as of 03 Nov 2026 is ₹2,237.60. Minimum Lumpsum Investment is ₹100. ;",
+      "fetched_at": "2026-11-04T13:41:44Z",
+      "is_fact": false
+    },
+    {
+      "chunk_id": "hdfc-flexi-cap::invest-in-mutual-funds::0025",
+      "distance": 0.5893279314041138,
+      "score": 0.4107,
+      "doc_id": "hdfc-flexi-cap",
+      "entity_id": "hdfc-flexi-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "section": "Invest in Mutual Funds",
+      "text": "Invest in direct mutual funds at zero charges via lump sump investments or SIPs",
+      "fetched_at": "2026-11-04T13:41:44Z",
+      "is_fact": false
+    },
+    {
+      "chunk_id": "hdfc-flexi-cap::compare-funds::0032",
+      "distance": 0.6210187673568726,
+      "score": 0.379,
+      "doc_id": "hdfc-flexi-cap",
+      "entity_id": "hdfc-flexi-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "section": "Compare Funds",
+      "text": "More SIP calculator Estimate returns on a SIP Brokerage calculator Estimate charges for your trade/investment Margin calculator Estimate balance needed to buy/sell a stock SWP calculator Returns on your systematic withdrawal plan Pricing Brokerage and charges on Groww Blog Credit Loan against securities and Personal loan",
+      "fetched_at": "2026-11-04T13:41:44Z",
+      "is_fact": false
+    }
+  ]
+}

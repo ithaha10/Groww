@@ -1,0 +1,71 @@
+{
+  "query_id": "d13eebd208ae",
+  "query": "Existing exit load HDFC Flexi Cap",
+  "top_k": 5,
+  "entity_filter": "hdfc-flexi-cap-direct-growth",
+  "field_filter": "exit_load",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "retrieved_at": "2026-11-04T13:45:35Z",
+  "hits": [
+    {
+      "chunk_id": "hdfc-flexi-cap::exit-load::0006",
+      "distance": 0.8532710075378418,
+      "score": 0.1467,
+      "doc_id": "hdfc-flexi-cap",
+      "entity_id": "hdfc-flexi-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "section": "exit_load",
+      "text": "Exit load of 1% if redeemed within 1 year",
+      "fetched_at": "2026-11-04T13:41:44Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-flexi-cap::exit-load::0009",
+      "distance": 0.8532710075378418,
+      "score": 0.1467,
+      "doc_id": "hdfc-flexi-cap",
+      "entity_id": "hdfc-flexi-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "section": "exit_load",
+      "text": "Exit load of 1% if redeemed within 1 year",
+      "fetched_at": "2026-11-04T13:41:44Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-flexi-cap::exit-load::0012",
+      "distance": 0.8532710075378418,
+      "score": 0.1467,
+      "doc_id": "hdfc-flexi-cap",
+      "entity_id": "hdfc-flexi-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "section": "exit_load",
+      "text": "Exit load of 1% if redeemed within 1 year",
+      "fetched_at": "2026-11-04T13:41:44Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-flexi-cap::riskometer::0010",
+      "distance": 0.40952634811401367,
+      "score": 0.5905,
+      "doc_id": "hdfc-flexi-cap",
+      "entity_id": "hdfc-flexi-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "section": "riskometer",
+      "text": "The HDFC Flexi Cap Direct Plan Growth is rated Very High risk.",
+      "fetched_at": "2026-11-04T13:41:44Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-flexi-cap::hdfc-flexi-cap-direct-plan-growth::0138",
+      "distance": 0.4739433526992798,
+      "score": 0.5261,
+      "doc_id": "hdfc-flexi-cap",
+      "entity_id": "hdfc-flexi-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "section": "HDFC Flexi Cap Direct Plan Growth",
+      "text": "HDFC Flexi Cap Direct Plan Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 10 Dec 1999. Dhruv Muchhal is the Current Fund Manager of HDFC Flexi Cap Direct Plan Growth fund. The fund currently has an Asset Under Management(AUM) of ₹9,34,076 Cr and the Latest NAV as of 03 Nov 2026 is ₹2,237.60. Minimum Lumpsum Investment is ₹100. ;",
+      "fetched_at": "2026-11-04T13:41:44Z",
+      "is_fact": false
+    }
+  ]
+}

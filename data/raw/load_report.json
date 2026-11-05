@@ -1,0 +1,48 @@
+{
+  "loaded_at": "2026-11-04T13:42:02Z",
+  "ok_count": 10,
+  "skipped_count": 0,
+  "ok": [
+    {
+      "doc_id": "hdfc-amc",
+      "url": "https://groww.in/mutual-funds/amc/hdfc-mutual-funds"
+    },
+    {
+      "doc_id": "hdfc-large-cap",
+      "url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth"
+    },
+    {
+      "doc_id": "hdfc-flexi-cap",
+      "url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth"
+    },
+    {
+      "doc_id": "hdfc-elss",
+      "url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth"
+    },
+    {
+      "doc_id": "hdfc-mid-cap",
+      "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth"
+    },
+    {
+      "doc_id": "groww-capital-gain-report",
+      "url": "https://groww.in/help/mutual-funds/mf-others/how-to-download-capital-gain-report--50"
+    },
+    {
+      "doc_id": "groww-elss-tax-proof",
+      "url": "https://groww.in/help/my-account/ma-others/where-can-i-get-the-tax-proof-for-section-80c"
+    },
+    {
+      "doc_id": "amfi-investor",
+      "url": "https://www.amfiindia.com/investor"
+    },
+    {
+      "doc_id": "sebi-investor",
+      "url": "https://investor.sebi.gov.in/"
+    },
+    {
+      "doc_id": "sebi-investor-material",
+      "url": "https://investor.sebi.gov.in/iematerial.html"
+    }
+  ],
+  "skipped": []
+}

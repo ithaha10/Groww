@@ -1,0 +1,71 @@
+{
+  "query_id": "d906ea798e86",
+  "query": "Exit load of HDFC Mid Cap Fund Direct Growth",
+  "top_k": 5,
+  "entity_filter": "hdfc-mid-cap-direct-growth",
+  "field_filter": "exit_load",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "retrieved_at": "2026-11-04T13:52:56Z",
+  "hits": [
+    {
+      "chunk_id": "hdfc-mid-cap::exit-load::0006",
+      "distance": 0.6930569410324097,
+      "score": 0.3069,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "exit_load",
+      "text": "Exit load of 1% if redeemed within 1 year.",
+      "fetched_at": "2026-11-04T13:41:46Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-mid-cap::exit-load::0009",
+      "distance": 0.6930569410324097,
+      "score": 0.3069,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "exit_load",
+      "text": "Exit load of 1% if redeemed within 1 year.",
+      "fetched_at": "2026-11-04T13:41:46Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-mid-cap::exit-load::0012",
+      "distance": 0.6930569410324097,
+      "score": 0.3069,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "exit_load",
+      "text": "Exit load of 1% if redeemed within 1 year.",
+      "fetched_at": "2026-11-04T13:41:46Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-mid-cap::riskometer::0010",
+      "distance": 0.2523643970489502,
+      "score": 0.7476,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "riskometer",
+      "text": "The HDFC Mid Cap Fund Direct Growth is rated Very High risk.",
+      "fetched_at": "2026-11-04T13:41:46Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-mid-cap::hdfc-mid-cap-fund-direct-growth::0133",
+      "distance": 0.26155269145965576,
+      "score": 0.7384,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "HDFC Mid Cap Fund Direct Growth",
+      "text": "HDFC Mid Cap Fund Direct Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 10 Dec 1999. Chirag Setalvad is the Current Fund Manager of HDFC Mid Cap Fund Direct Growth fund. The fund currently has an Asset Under Management(AUM) of ₹9,34,076 Cr and the Latest NAV as of 03 Nov 2026 is ₹220.09. Minimum Lumpsum Investment is ₹100. ;",
+      "fetched_at": "2026-11-04T13:41:46Z",
+      "is_fact": false
+    }
+  ]
+}

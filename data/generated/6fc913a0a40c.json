@@ -1,0 +1,17 @@
+{
+  "query_id": "6fc913a0a40c",
+  "query": "Expense ratio of HDFC Large Cap Fund Direct Growth",
+  "mode": "answer",
+  "intent": "fact",
+  "field": "expense_ratio",
+  "answer_text": "The expense ratio for HDFC Large Cap Fund Direct Growth is 1.02%.\n\nSource: https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth\nLast updated from sources: 2026-11-04T13:41:43Z",
+  "citation_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+  "last_updated": "2026-11-04T13:41:43Z",
+  "chunks_used": [
+    "hdfc-large-cap::expense-ratio::0002",
+    "hdfc-large-cap::expense-ratio::0003"
+  ],
+  "model": "qwen/qwen3.8-27b",
+  "error": null,
+  "generated_at": "2026-11-04T13:52:14Z"
+}

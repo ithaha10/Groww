@@ -1,0 +1,71 @@
+{
+  "query_id": "27f0c6d372fb",
+  "query": "Exit load of HDFC Large Cap Fund Direct Growth",
+  "top_k": 5,
+  "entity_filter": "hdfc-large-cap-direct-growth",
+  "field_filter": "exit_load",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "retrieved_at": "2026-11-04T13:44:35Z",
+  "hits": [
+    {
+      "chunk_id": "hdfc-large-cap::exit-load::0004",
+      "distance": 0.5174417495727539,
+      "score": 0.4826,
+      "doc_id": "hdfc-large-cap",
+      "entity_id": "hdfc-large-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "section": "exit_load",
+      "text": "Exit load A fee payable to a mutual fund house for exiting a fund (fully or partially) before the completion of a specified period from the date of investment. Stamp duty",
+      "fetched_at": "2026-11-04T13:41:43Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-large-cap::exit-load::0009",
+      "distance": 0.6821209192276001,
+      "score": 0.3179,
+      "doc_id": "hdfc-large-cap",
+      "entity_id": "hdfc-large-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "section": "exit_load",
+      "text": "Exit load, stamp duty and tax",
+      "fetched_at": "2026-11-04T13:41:43Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-large-cap::exit-load::0005",
+      "distance": 0.6890276670455933,
+      "score": 0.311,
+      "doc_id": "hdfc-large-cap",
+      "entity_id": "hdfc-large-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "section": "exit_load",
+      "text": "Exit Load 08 May 2015",
+      "fetched_at": "2026-11-04T13:41:43Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-large-cap::hdfc-large-cap-fund-direct-growth::0102",
+      "distance": 0.23283761739730835,
+      "score": 0.7672,
+      "doc_id": "hdfc-large-cap",
+      "entity_id": "hdfc-large-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "section": "HDFC Large Cap Fund Direct Growth",
+      "text": "HDFC Large Cap Fund Direct Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 10 Dec 1999. Rahul Baijal is the Current Fund Manager of HDFC Large Cap Fund Direct Growth fund. The fund currently has an Asset Under Management(AUM) of ₹9,34,076 Cr and the Latest NAV as of 03 Nov 2026 is ₹1,197.56. Minimum Lumpsum Investment is ₹100. ;",
+      "fetched_at": "2026-11-04T13:41:43Z",
+      "is_fact": false
+    },
+    {
+      "chunk_id": "hdfc-large-cap::riskometer::0012",
+      "distance": 0.2454441785812378,
+      "score": 0.7546,
+      "doc_id": "hdfc-large-cap",
+      "entity_id": "hdfc-large-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "section": "riskometer",
+      "text": "The HDFC Large Cap Fund Direct Growth is rated Very High risk.",
+      "fetched_at": "2026-11-04T13:41:43Z",
+      "is_fact": true
+    }
+  ]
+}

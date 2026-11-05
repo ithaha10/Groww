@@ -1,0 +1,18 @@
+{
+  "query_id": "d906ea798e86",
+  "query": "Exit load of HDFC Mid Cap Fund Direct Growth",
+  "mode": "answer",
+  "intent": "fact",
+  "field": "exit_load",
+  "answer_text": "HDFC Mid Cap Fund Direct Growth has an exit load of 1% if redeemed within 1 year.\n\nSource: https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth\nLast updated from sources: 2026-11-04T13:41:46Z",
+  "citation_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+  "last_updated": "2026-11-04T13:41:46Z",
+  "chunks_used": [
+    "hdfc-mid-cap::exit-load::0006",
+    "hdfc-mid-cap::exit-load::0009",
+    "hdfc-mid-cap::exit-load::0012"
+  ],
+  "model": "qwen/qwen3.8-27b",
+  "error": null,
+  "generated_at": "2026-11-04T13:52:57Z"
+}

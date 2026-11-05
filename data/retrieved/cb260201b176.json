@@ -1,0 +1,71 @@
+{
+  "query_id": "cb260201b176",
+  "query": "Benchmark of HDFC Large Cap Fund Direct Growth",
+  "top_k": 5,
+  "entity_filter": "hdfc-large-cap-direct-growth",
+  "field_filter": "benchmark",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "retrieved_at": "2026-11-04T13:52:56Z",
+  "hits": [
+    {
+      "chunk_id": "hdfc-large-cap::benchmark::0015",
+      "distance": 0.5266183614730835,
+      "score": 0.4734,
+      "doc_id": "hdfc-large-cap",
+      "entity_id": "hdfc-large-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "section": "benchmark",
+      "text": "Fund benchmark NIFTY 100 Total Return Index",
+      "fetched_at": "2026-11-04T13:41:43Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-large-cap::hdfc-large-cap-fund-direct-growth::0102",
+      "distance": 0.1701120138168335,
+      "score": 0.8299,
+      "doc_id": "hdfc-large-cap",
+      "entity_id": "hdfc-large-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "section": "HDFC Large Cap Fund Direct Growth",
+      "text": "HDFC Large Cap Fund Direct Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 10 Dec 1999. Rahul Baijal is the Current Fund Manager of HDFC Large Cap Fund Direct Growth fund. The fund currently has an Asset Under Management(AUM) of ₹9,34,076 Cr and the Latest NAV as of 03 Nov 2026 is ₹1,197.56. Minimum Lumpsum Investment is ₹100. ;",
+      "fetched_at": "2026-11-04T13:41:43Z",
+      "is_fact": false
+    },
+    {
+      "chunk_id": "hdfc-large-cap::riskometer::0012",
+      "distance": 0.22289127111434937,
+      "score": 0.7771,
+      "doc_id": "hdfc-large-cap",
+      "entity_id": "hdfc-large-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "section": "riskometer",
+      "text": "The HDFC Large Cap Fund Direct Growth is rated Very High risk.",
+      "fetched_at": "2026-11-04T13:41:43Z",
+      "is_fact": true
+    },
+    {
+      "chunk_id": "hdfc-large-cap::investment-objective::0103",
+      "distance": 0.5328853130340576,
+      "score": 0.4671,
+      "doc_id": "hdfc-large-cap",
+      "entity_id": "hdfc-large-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "section": "Investment Objective",
+      "text": "The scheme seeks to provide long-term capital appreciation/income by investing predominantly in Large-Cap companies.",
+      "fetched_at": "2026-11-04T13:41:43Z",
+      "is_fact": false
+    },
+    {
+      "chunk_id": "hdfc-large-cap::rahul-baijal::0098",
+      "distance": 0.5381371378898621,
+      "score": 0.4619,
+      "doc_id": "hdfc-large-cap",
+      "entity_id": "hdfc-large-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "section": "Rahul Baijal",
+      "text": "Jul 2022 - Present View details Education Mr. Baijal has done PGDM(MBA) from IIM Calcutta and is an engineering graduate of Delhi college of Engineering Experience Prior to joining HDFC Mutual Fund, he has worked with Sundaram Mutual Fund, Bharti AXA Life Insurance, TVF Capital, HSBC Securities, Credit Suisse Securities & Standard Chartered Bank. Also manages these schemes",
+      "fetched_at": "2026-11-04T13:41:43Z",
+      "is_fact": false
+    }
+  ]
+}

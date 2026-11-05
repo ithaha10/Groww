@@ -1,0 +1,14 @@
+{
+  "query_id": "4cccf798d9a9",
+  "query": "Expense ratio of SBI Bluechip?",
+  "mode": "refuse",
+  "intent": "other_amc:sbi",
+  "answer_text": "This demo covers HDFC Mutual Fund and four listed schemes only. For general investor education, see https://www.amfiindia.com/investor.",
+  "citation_url": "https://www.amfiindia.com/investor",
+  "last_updated": "2026-11-04T13:46:00Z",
+  "field": "expense_ratio",
+  "chunks_used": [],
+  "model": null,
+  "error": null,
+  "generated_at": "2026-11-04T13:46:00Z"
+}

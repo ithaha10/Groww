@@ -1,0 +1,17 @@
+{
+  "query_id": "9ecc7a7cb663",
+  "query": "Riskometer of HDFC Mid Cap Fund Direct Growth",
+  "mode": "answer",
+  "intent": "fact",
+  "field": "riskometer",
+  "answer_text": "The HDFC Mid Cap Fund Direct Growth is rated as Very High risk.\n\nSource: https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth\nLast updated from sources: 2026-11-04T13:41:46Z",
+  "citation_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+  "last_updated": "2026-11-04T13:41:46Z",
+  "chunks_used": [
+    "hdfc-mid-cap::riskometer::0010",
+    "hdfc-mid-cap::riskometer::0001"
+  ],
+  "model": "qwen/qwen3.8-27b",
+  "error": null,
+  "generated_at": "2026-11-04T13:52:56Z"
+}

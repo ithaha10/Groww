@@ -1,0 +1,94 @@
+sources:
+  - id: hdfc-amc
+    url: https://groww.in/mutual-funds/amc/hdfc-mutual-funds
+    entity_type: amc
+    entity_id: hdfc-mutual-fund
+  - id: hdfc-large-cap
+    url: https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth
+    entity_type: scheme
+    entity_id: hdfc-large-cap-direct-growth
+  - id: hdfc-flexi-cap
+    url: https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth
+    entity_type: scheme
+    entity_id: hdfc-flexi-cap-direct-growth
+  - id: hdfc-elss
+    url: https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth
+    entity_type: scheme
+    entity_id: hdfc-elss-tax-saver-direct-growth
+  - id: hdfc-mid-cap
+    url: https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth
+    entity_type: scheme
+    entity_id: hdfc-mid-cap-direct-growth
+  - id: groww-capital-gain-report
+    url: https://groww.in/help/mutual-funds/mf-others/how-to-download-capital-gain-report--50
+    entity_type: help
+    entity_id: groww-capital-gain-report
+  - id: groww-elss-tax-proof
+    url: https://groww.in/help/my-account/ma-others/where-can-i-get-the-tax-proof-for-section-80c
+    entity_type: help
+    entity_id: groww-elss-tax-proof
+  - id: groww-elss-explain
+    url: https://groww.in/p/elss
+    entity_type: education
+    entity_id: groww-elss
+  - id: groww-sip-explain
+    url: https://groww.in/p/sip
+    entity_type: education
+    entity_id: groww-sip
+  - id: hdfc-amc-factsheets
+    url: https://www.hdfcfund.com/mutual-funds/factsheets
+    entity_type: amc
+    entity_id: hdfc-mutual-fund
+  - id: hdfc-large-cap-amc
+    url: https://www.hdfcfund.com/explore/mutual-funds/hdfc-large-cap-fund/direct
+    entity_type: scheme
+    entity_id: hdfc-large-cap-direct-growth
+  - id: hdfc-flexi-cap-amc
+    url: https://www.hdfcfund.com/explore/mutual-funds/hdfc-flexi-cap-fund/direct
+    entity_type: scheme
+    entity_id: hdfc-flexi-cap-direct-growth
+  - id: hdfc-elss-amc
+    url: https://www.hdfcfund.com/explore/mutual-funds/hdfc-elss-tax-saver-fund/direct
+    entity_type: scheme
+    entity_id: hdfc-elss-tax-saver-direct-growth
+  - id: hdfc-mid-cap-amc
+    url: https://www.hdfcfund.com/explore/mutual-funds/hdfc-mid-cap-fund/direct
+    entity_type: scheme
+    entity_id: hdfc-mid-cap-direct-growth
+  - id: amfi-investor
+    url: https://www.amfiindia.com/investor
+    entity_type: education
+    entity_id: amfi-investor
+  - id: sebi-investor
+    url: https://investor.sebi.gov.in/
+    entity_type: education
+    entity_id: sebi-investor
+  - id: sebi-investor-material
+    url: https://investor.sebi.gov.in/iematerial.html
+    entity_type: education
+    entity_id: sebi-investor-material
+
+allowed_domains:
+  - groww.in
+  - www.hdfcfund.com
+  - www.amfiindia.com
+  - www.sebi.gov.in
+
+chunking:
+  strategy: structure_recursive
+  chunk_size: 512
+  chunk_overlap: 64
+  min_chunk_chars: 40
+
+embedding:
+  model: sentence-transformers/all-MiniLM-L6-v2
+
+chroma:
+  persist_dir: data/chroma
+  collection: groww_mf_faq
+
+retrieval:
+  top_k: 5
+
+llm:
+  provider: groq

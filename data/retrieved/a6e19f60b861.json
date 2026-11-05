@@ -1,0 +1,71 @@
+{
+  "query_id": "a6e19f60b861",
+  "query": "How do I download a capital-gains statement?",
+  "top_k": 5,
+  "entity_filter": null,
+  "field_filter": "statement",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "retrieved_at": "2026-11-04T13:28:25Z",
+  "hits": [
+    {
+      "chunk_id": "groww-elss-tax-proof::steps-to-request-your-elss-statement::0003",
+      "distance": 0.3756464123725891,
+      "score": 0.6244,
+      "doc_id": "groww-elss-tax-proof",
+      "entity_id": "groww-elss-tax-proof",
+      "source_url": "https://groww.in/help/my-account/ma-others/where-can-i-get-the-tax-proof-for-section-80c",
+      "section": "Steps to request your ELSS Statement:",
+      "text": "Go to your profile. Select the 'Reports' option. Under 'Tax', find 'Mutual Fund - Capital Gains'. Choose the financial year and click 'Download'. Click the button below to go directly to the 'Reports' section.",
+      "fetched_at": "2026-11-04T13:24:14Z",
+      "is_fact": false
+    },
+    {
+      "chunk_id": "groww-elss-tax-proof::where-can-i-get-the-tax-proof-for-section-80c::0002",
+      "distance": 0.5319827795028687,
+      "score": 0.468,
+      "doc_id": "groww-elss-tax-proof",
+      "entity_id": "groww-elss-tax-proof",
+      "source_url": "https://groww.in/help/my-account/ma-others/where-can-i-get-the-tax-proof-for-section-80c",
+      "section": "Where can I get the tax proof for section 80C?",
+      "text": "You can request your tax proof for Section 80C by downloading the Mutual Fund-ELSS statement.",
+      "fetched_at": "2026-11-04T13:24:14Z",
+      "is_fact": false
+    },
+    {
+      "chunk_id": "hdfc-large-cap::equity-large-cap::0088",
+      "distance": 0.5466409921646118,
+      "score": 0.4534,
+      "doc_id": "hdfc-large-cap",
+      "entity_id": "hdfc-large-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "section": "Equity Large Cap",
+      "text": ") 50 20 12 -- Understand terms A percentage of your capital gains payable to the government upon exiting your mutual fund investments. Taxation is categorized as long-term capital gains (LTCG) and short-term capital gains (STCG) depending on your holding period and the type of fund. A form of tax payable for the purchase or sale of an asset or security.",
+      "fetched_at": "2026-11-04T13:24:07Z",
+      "is_fact": false
+    },
+    {
+      "chunk_id": "hdfc-mid-cap::equity-mid-cap::0119",
+      "distance": 0.5560171604156494,
+      "score": 0.444,
+      "doc_id": "hdfc-mid-cap",
+      "entity_id": "hdfc-mid-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "section": "Equity Mid Cap",
+      "text": ") 15 4 7 -- Understand terms A percentage of your capital gains payable to the government upon exiting your mutual fund investments. Taxation is categorized as long-term capital gains (LTCG) and short-term capital gains (STCG) depending on your holding period and the type of fund. A form of tax payable for the purchase or sale of an asset or security. Stamp duty on investment: 0.005% (from July 1st, 2020) from July 1st 2020 Tax implication If you redeem within one year, returns are taxed at 20%.",
+      "fetched_at": "2026-11-04T13:24:10Z",
+      "is_fact": false
+    },
+    {
+      "chunk_id": "hdfc-flexi-cap::equity-flexi-cap::0124",
+      "distance": 0.5572725534439087,
+      "score": 0.4427,
+      "doc_id": "hdfc-flexi-cap",
+      "entity_id": "hdfc-flexi-cap-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "section": "Equity Flexi Cap",
+      "text": ") 10 3 3 -- Understand terms A percentage of your capital gains payable to the government upon exiting your mutual fund investments. Taxation is categorized as long-term capital gains (LTCG) and short-term capital gains (STCG) depending on your holding period and the type of fund. A form of tax payable for the purchase or sale of an asset or security. Stamp duty on investment: 0.005% (from July 1st, 2020) from July 1st 2020 Tax implication If you redeem within one year, returns are taxed at 20%.",
+      "fetched_at": "2026-11-04T13:24:08Z",
+      "is_fact": false
+    }
+  ]
+}

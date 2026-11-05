@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+lxml
+pyyaml
+python-dotenv
+sentence-transformers
+chromadb
+groq
+streamlit
