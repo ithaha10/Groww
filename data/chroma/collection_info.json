@@ -1,7 +1,7 @@
 {
   "collection": "groww_mf_faq",
-  "count": 333,
+  "count": 335,
   "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
   "persist_dir": "data/chroma",
-  "updated_at": "2026-11-05T08:21:22Z"
+  "updated_at": "2026-11-15T19:47:33Z"
 }

@@ -1,5 +1,5 @@
 {
-  "chunked_at": "2026-11-05T08:21:05Z",
+  "chunked_at": "2026-11-15T19:47:14Z",
   "strategy": "structure_recursive",
   "chunk_size": 512,
   "chunk_overlap": 64,
@@ -8,18 +8,18 @@
       "doc_id": "hdfc-amc",
       "title": "HDFC Mutual Fund - Latest MF Schemes, NAV, Performance & Returns 2026 - Groww",
       "chunks": 102,
-      "fact_chunks": 46
+      "fact_chunks": 47
     },
     {
       "doc_id": "hdfc-large-cap",
       "title": "HDFC Large Cap Fund Direct Growth - NAV, Mutual Fund Performance & Portfolio",
-      "chunks": 50,
+      "chunks": 49,
       "fact_chunks": 15
     },
     {
       "doc_id": "hdfc-flexi-cap",
       "title": "HDFC Flexi Cap Direct Plan Growth - NAV, Mutual Fund Performance & Portfolio",
-      "chunks": 52,
+      "chunks": 55,
       "fact_chunks": 13
     },
     {
@@ -65,5 +65,5 @@
       "fact_chunks": 0
     }
   ],
-  "total_chunks": 333
+  "total_chunks": 335
 }
